@@ -11,10 +11,20 @@ int c = 0;
 InputNumbers(ref c);
 System.Console.WriteLine("Введеные длины сторон: ");
 Console.WriteLine($"{a} {b} {c}");
+Check(a,b,c);
 
-if (a+b > c && a+c >b && c+b>a)
+
+
+
+
+
+
+void Check (int x, int y,int z)
+{
+if (x+y > z && x+z >y && y+z>x)
 System.Console.WriteLine("Условие выполняется");
 else System.Console.WriteLine("Условие не выполняется");
+}
 
 
 
